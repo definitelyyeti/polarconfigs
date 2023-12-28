@@ -4,7 +4,7 @@ EagleSneakModeSafeWalk:Normal
 AwaitDamageFlightMode:false
 ToggleDamageFlightMode:false
 FlightMode:Spartan
-SpartanFlightMode:P509 Flag
+SpartanFlightMode:P529
 VulcanFlightMode:271
 BoatFlightMode:Custom
 BoatBoostBoatFly:1.0
@@ -146,7 +146,7 @@ AutoBlockPostBlockAttackDelay:15.0
 AutoBlockUnBlockKillaura:true
 AutoBlockUnBlockOffsetKillAura:1.0
 SpeedMode:Bhop
-BhopSpeedMode:Spartan P495
+BhopSpeedMode:Spartan
 VerusBhopSpeedMode:Boost
 VulcanBhopSpeedMode:Boost
 KarhuBhopSpeedMode:Old Low
@@ -159,6 +159,7 @@ DACBhopSpeedMode:107 Boost
 DACTeleportsSpeedBhop:1.0
 DACBoostDelay:1.0
 KauriBhopSpeedMode:2.19.2
+SpartanBhopSpeedMode:P529 Mini
 GroundSpeedMode:Spartan P504
 OtherSpeedMode:Test
 GroundTimerOtherSpeed:1.0
@@ -171,7 +172,7 @@ StopOnHitSpeed:true
 StopOnHitStrafe:false
 OnlyGroundStrafe:false
 OnlyTargetStrafe:false
-NofallMode:Normal
+NofallMode:Spartan P529 Flag
 NormalNofallMode:Packet
 AACNofallMode:442 Spoof
 VulcanNofallMode:272
@@ -291,7 +292,7 @@ WaitpastCleanAutoArmor:true
 OpenInvAutoArmor:false
 NoMoveAutoArmor:false
 NoSwingingAutoArmor:false
-LongJumpMode:Spartan P508
+LongJumpMode:Spartan P529
 FrequencyAirHopGlideLongJump:false
 BlinkPacketLimit:false
 BlinkMaxPackets:50.0
@@ -305,6 +306,7 @@ FakeRotateNoRotate:false
 FakeRotateDurationNoRotate:15.0
 SilentAutoTool:false
 SpoofSilentAutoTool:false
+ClientSideGuiWalk:false
 StopSprintGuiWalk:false
 FreeLookGuiWalk:false
 MotionInVwalk:false
@@ -340,7 +342,7 @@ ClickFastPlace:1.0,2.0
 TargetstrafeRange:2.0
 OnlySpeedTargetStrafe:false
 PacketSpooferModes:S08Flag=false
-PacketSpooferModes:VerusFly=true
+PacketSpooferModes:VerusFly=false
 PacketSpooferModes:Test=false
 PacketSpooferModes:C0FCancel=false
 PacketSpooferModes:Spectate=false
@@ -399,25 +401,20 @@ SlowMovementFastBow:false
 PacketAmountFastBow:30.0
 TimercustomFastBow:1.0
 TeleportMode:Vanilla
-Speed:false
+NoFall:true
 WaterWalk:true
 LongJump:false
-HighJump:false
 InvCleaner:true
 AutoArmor:true
-Spider:true
+Speed:false
+Spider:false
 NoSlowdown:true
 QuickStop:true
-Criticals:false
-Step:false
 Velocity:true
 PacketSpoofer:false
-AntiFall:false
-KillAura:false
 Flight:false
 TargetStrafe:false
 HotbarHelper:false
-NoFall:false
 ChestStealer:false
 FastConsume:false
 NoJumpDelay:true
@@ -431,17 +428,22 @@ FastBreak:false
 PingSpoof:false
 FastPlace:true
 FastClimb:false
+HighJump:false
 NoRotate:false
 TNTBlock:false
 SafeWalk:false
 Scaffold:false
 AutoTool:true
 Teleport:false
+Criticals:false
 FastBow:false
+KillAura:false
 Pattern:false
 InvWalk:true
+AntiFall:false
 AntiBot:false
 Strafe:true
 Sprint:true
 Phase:false
+Step:false
 Blink:false
