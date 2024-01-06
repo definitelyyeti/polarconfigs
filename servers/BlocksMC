@@ -13,14 +13,14 @@ MotionFlightMode:0.0
 VerusFlightMode:Bounce
 NegativityFlightMode:Mini Bounce
 FrequencyFlightMode:Custom
-BlockGroundSlowDownNoSlowDown:20.0
-BlockAirSlowDownNoSlowDown:20.0
-ConsumeSlowdown:false
-ConsumeGroundSlowDownNoSlowDown:100.0
-ConsumeAirSlowDownNoSlowDown:100.0
-BowSlowdown:false
-BowGroundSlowDownNoSlowDown:100.0
-BowAirSlowDownNoSlowDown:100.0
+BlockGroundSlowDownNoSlowDown:35.0
+BlockAirSlowDownNoSlowDown:35.0
+ConsumeSlowdown:true
+ConsumeGroundSlowDownNoSlowDown:35.0
+ConsumeAirSlowDownNoSlowDown:35.0
+BowSlowdown:true
+BowGroundSlowDownNoSlowDown:35.0
+BowAirSlowDownNoSlowDown:35.0
 PacketSpoofNoSlowDown:false
 PacketModeNoSlowDown:Grim
 PacketOffsetNoSlowDown:Default
@@ -53,10 +53,12 @@ PushPlusPlusVelocity:false
 VoidCheckVelocity:false
 FireCheckVelocity:false
 PotionCheckVelocity:false
-AttackPreRangeKillaura:0.4
 AttackRangeKillaura:4.1
+AttackPreRangeKillaura:0.4
 AttackExtraRange:false
 MaxExtendRangeAttackRangeKillaura:1.0
+AttackFirstExtraRange:false
+FirstHitAttackExtraRangeKillaura:6.0
 AttackDelayKillaura:64.0,96.0
 SmartDelayKillaura:true
 PatternDelayKillaura:false
@@ -157,6 +159,7 @@ DACBhopSpeedMode:107 Boost
 DACTeleportsSpeedBhop:1.0
 DACBoostDelay:1.0
 KauriBhopSpeedMode:2.19.2
+SpartanBhopSpeedMode:P495
 GroundSpeedMode:Vulcan 272
 OtherSpeedMode:Jump
 GroundTimerOtherSpeed:1.0
@@ -166,9 +169,10 @@ SpartanP495TimerOtherSpeed:false
 JumpBoostOtherSpeed:0.2
 JumpMotionOtherSpeed:0.42
 StopOnHitSpeed:false
-StopOnHitStrafe:false
-OnlyGroundStrafe:false
 OnlyTargetStrafe:true
+HurttimeHitStrafe:Ignore
+ConditionStrafe:Always
+TicksStrafe:0.0
 NofallMode:Vulcan 272
 NormalNofallMode:Packet
 AACNofallMode:442 Spoof
@@ -233,6 +237,8 @@ EagleSneakScaffold:false
 EagleSneakModeScaffold:Normal
 SneakScaffoldEagleDelay:3.0
 SneakModeScaffold:Packet
+SneakSpeedScaffold:1.0
+KeepEyeSightScaffoldSneak:false
 SameYScaffold:true
 SameYOnlyMoveScaffold:true
 EdgePlaceScaffold:false
@@ -253,9 +259,9 @@ ReduceDelayTowerScaffold:true
 TowerDelayScaffold:105.0,140.0
 TowerScaffold:false
 TowerScaffoldMode:Vulcan 272 High
-NoMoveTowerScaffold:false
 InstantTeleportTowerScaffold:false
 ScaffoldMode:Default
+ScaffoldTowerMove:Always
 BreezilyMovementDelayScaffold:0.0
 SpiderMode:ACR 199
 AwaitDamageHighJumpMode:false
@@ -296,11 +302,13 @@ BlinkMaxDistance:10.0
 WaterWalkMode:Swim
 VulcanWaterWalkMode:271
 NCPWaterWalkMode:Solid
+SpartanWaterWalkMode:P529
 DelayPingSpoof:0.0,800.0
 FakeRotateNoRotate:false
 FakeRotateDurationNoRotate:15.0
 SilentAutoTool:false
 SpoofSilentAutoTool:false
+ClientSideGuiWalk:false
 StopSprintGuiWalk:false
 FreeLookGuiWalk:false
 MotionInVwalk:false
@@ -377,6 +385,7 @@ ExcludeTargetStrafeMovementFix:false
 ModifyStrafeMovementFix:false
 FastBreakMode:Normal
 SpeedFastBreak:1.0
+PacketsFastBreak:1.0
 TicksFastConsume:13.0
 PotionsFastConsume:false
 FastConsumeMode:Packet
@@ -395,24 +404,38 @@ SlowMovementFastBow:false
 PacketAmountFastBow:30.0
 TimercustomFastBow:1.0
 TeleportMode:Vanilla
+BlockBreakerModeBlock:Bed=true
+BlockBreakerModeBlock:Egg=false
+BlockBreakerModeBlock:Cake=false
+BlockBreakerMode:Basic
+BlockBreakerRange:4.0
+BlockBreakerDelay:0.0
+BedBreakBlockBreakerMode:Normal
+SurroundBreakBlockBreakerMode:Normal
+BlockBreakerSwing:false
+BlockBreakerSmoothRotation:false
+PitchSpeedRotationBlockBreaker:1.0,180.0
+YawSpeedRotationBlockBreaker:1.0,180.0
+BlockBreakerCorrectMovement:false
 Speed:false
-LongJump:false
+WaterWalk:false
 InvCleaner:true
 AutoArmor:true
 QuickStop:true
-NoSlowdown:false
-Flight:false
+NoSlowdown:true
+FastBow:false
 Velocity:true
 PacketSpoofer:false
-WaterWalk:false
 KillAura:false
 Strafe:false
 TargetStrafe:false
 HotbarHelper:true
-NoFall:false
+BlockBreaker:false
 ChestStealer:false
+NoFall:false
 FastConsume:false
 NoJumpDelay:true
+Flight:false
 MovementFix:false
 TestModule:false
 BackRotate:false
@@ -423,6 +446,7 @@ FastBreak:false
 Step:true
 PingSpoof:false
 FastPlace:false
+LongJump:false
 FastClimb:false
 HighJump:false
 NoRotate:false
@@ -432,7 +456,6 @@ Scaffold:false
 AutoTool:true
 Teleport:false
 Criticals:false
-FastBow:false
 Pattern:false
 InvWalk:false
 AntiFall:false
