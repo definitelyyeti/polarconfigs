@@ -136,7 +136,7 @@ UpdatedCombatKillAura:false
 AttackSlowDownKillaura:false
 MotionAttackSlowDownKillaura:1.0
 FakeAutoBlockKillaura:true
-AutoBlockKillaura:true
+AutoBlockKillaura:false
 AutoBlockDistanceKillaura:4.15
 BlockEventKillAura:Post
 BlockModeKillaura:Test
