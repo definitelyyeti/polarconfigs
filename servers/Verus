@@ -215,7 +215,7 @@ DivergenceAbstractMouseSensitivityFixScaffold:false
 EconomincalAngleScaffold:true
 ClosedEconomincalAngleScaffold:true
 EdgeRotateScaffold:false
-UnSprintScaffold:true
+UnSprintScaffold:false
 SpoofSprintScaffold:false
 AutoJumpScaffold:false
 ModifyMovementScaffold:false
