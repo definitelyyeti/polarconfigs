@@ -59,13 +59,13 @@ AttackExtraRange:false
 MaxExtendRangeAttackRangeKillaura:0.25
 AttackFirstExtraRange:false
 FirstHitAttackExtraRangeKillaura:3.7
-AttackDelayKillaura:123.0,172.0
+AttackDelayKillaura:93.0,172.0
 SmartDelayKillaura:true
 PatternDelayKillaura:true
 PatternDelayModeKillaura:Static
 PatternFileModifyDelayKillaura:false
-SmoothDelayKillaura:false
-SmoothDelayValueKillaura:17.4,25.85
+SmoothDelayKillaura:true
+SmoothDelayValueKillaura:38.6,40.0
 SmoothRotationKillAura:true
 PitchSpeedRotationKillaura:110.0,180.0
 PitchSpeedFactorRotationKillaura:1.0,1.0
