@@ -15,10 +15,10 @@ NegativityFlightMode:Mini Bounce
 FrequencyFlightMode:Custom
 BlockGroundSlowDownNoSlowDown:100.0
 BlockAirSlowDownNoSlowDown:100.0
-ConsumeSlowdown:false
+ConsumeSlowdown:true
 ConsumeGroundSlowDownNoSlowDown:100.0
 ConsumeAirSlowDownNoSlowDown:100.0
-BowSlowdown:false
+BowSlowdown:true
 BowGroundSlowDownNoSlowDown:100.0
 BowAirSlowDownNoSlowDown:100.0
 PacketSpoofNoSlowDown:true
@@ -138,7 +138,7 @@ MotionAttackSlowDownKillaura:1.0
 FakeAutoBlockKillaura:false
 AutoBlockKillaura:true
 AutoBlockDistanceKillaura:4.0
-BlockEventKillAura:Pre
+BlockEventKillAura:On
 BlockModeKillaura:Normal
 AutoBlockFillAnimationKillaura:false
 AutoBlockPostBlockAttack:false
@@ -159,6 +159,8 @@ DACBhopSpeedMode:107 Boost
 DACTeleportsSpeedBhop:1.0
 DACBoostDelay:1.0
 KauriBhopSpeedMode:2.19.2
+SpartanBhopSpeedMode:P495
+NegativitySpeedMode:271
 GroundSpeedMode:NCP Packet
 OtherSpeedMode:Jump
 GroundTimerOtherSpeed:1.0
@@ -168,9 +170,10 @@ SpartanP495TimerOtherSpeed:false
 JumpBoostOtherSpeed:0.2
 JumpMotionOtherSpeed:0.42
 StopOnHitSpeed:false
-StopOnHitStrafe:false
-OnlyGroundStrafe:false
 OnlyTargetStrafe:false
+HurttimeHitStrafe:Ignore
+ConditionStrafe:Always
+TicksStrafe:0.0
 NofallMode:Normal
 NormalNofallMode:Packet
 AACNofallMode:442 Spoof
@@ -256,9 +259,9 @@ SwingScaffold:true
 ReduceDelayTowerScaffold:false
 TowerDelayScaffold:1.0,750.0
 TowerScaffold:true
-TowerScaffoldMode:NCP Motion
-NoMoveTowerScaffold:true
+TowerScaffoldMode:NCP Lowhop
 InstantTeleportTowerScaffold:false
+ScaffoldTowerMove:Always
 ScaffoldMode:Default
 BreezilyMovementDelayScaffold:0.0
 SpiderMode:ACR 199
@@ -300,11 +303,13 @@ BlinkMaxDistance:10.0
 WaterWalkMode:NCP
 VulcanWaterWalkMode:271
 NCPWaterWalkMode:Motion
+SpartanWaterWalkMode:P529
 DelayPingSpoof:0.0,800.0
 FakeRotateNoRotate:false
 FakeRotateDurationNoRotate:15.0
 SilentAutoTool:false
 SpoofSilentAutoTool:false
+ClientSideGuiWalk:false
 StopSprintGuiWalk:false
 FreeLookGuiWalk:false
 MotionInVwalk:false
@@ -381,7 +386,8 @@ ExcludeTargetStrafeMovementFix:false
 ModifyStrafeMovementFix:false
 FastBreakMode:Normal
 SpeedFastBreak:1.0
-TicksFastConsume:13.0
+PacketsFastBreak:1.0
+TicksFastConsume:12.0
 PotionsFastConsume:false
 FastConsumeMode:Packet
 FastConsumeModeCustom:Packet=true
@@ -399,11 +405,25 @@ SlowMovementFastBow:false
 PacketAmountFastBow:30.0
 TimercustomFastBow:1.0
 TeleportMode:Vanilla
+BlockBreakerModeBlock:Bed=true
+BlockBreakerModeBlock:Egg=false
+BlockBreakerModeBlock:Cake=false
+BlockBreakerMode:Basic
+BlockBreakerRange:4.0
+BlockBreakerDelay:0.0
+BedBreakBlockBreakerMode:Normal
+SurroundBreakBlockBreakerMode:Normal
+BlockBreakerSwing:false
+BlockBreakerSmoothRotation:false
+PitchSpeedRotationBlockBreaker:1.0,180.0
+YawSpeedRotationBlockBreaker:1.0,180.0
+BlockBreakerCorrectMovement:false
 InvCleaner:true
-AutoArmor:true
 NoSlowdown:true
+AutoArmor:true
+LongJump:false
+FastConsume:true
 Speed:false
-Criticals:false
 Velocity:true
 PacketSpoofer:false
 QuickStop:true
@@ -411,21 +431,19 @@ KillAura:false
 WaterWalk:true
 TargetStrafe:true
 HotbarHelper:false
-Flight:false
+BlockBreaker:false
 ChestStealer:false
-FastConsume:false
 NoJumpDelay:true
+Flight:false
 MovementFix:false
 TestModule:false
 BackRotate:false
 Triggerbot:false
-AntiCactus:false
+AntiCactus:true
 AntiExploit:false
 FastBreak:false
-NoFall:false
 PingSpoof:false
 FastPlace:true
-LongJump:false
 FastClimb:false
 HighJump:false
 NoRotate:true
@@ -435,13 +453,15 @@ SafeWalk:false
 Scaffold:false
 AutoTool:true
 Teleport:false
+Criticals:false
 FastBow:false
 Pattern:false
+Blink:false
 InvWalk:true
 AntiFall:false
 AntiBot:false
 Strafe:true
 Spider:false
 Sprint:true
+NoFall:false
 Phase:false
-Blink:false
