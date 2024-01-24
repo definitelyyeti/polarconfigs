@@ -279,7 +279,7 @@ RandomizeChestStealer:true
 SmartChestStealer:true
 DelayInvCleaner:108.0,108.0
 WaitDelayInvCleaner:122.0,122.0
-OpenInvCleaner:true
+AutoArmorInventoryMode:Open
 NoMoveInvCleaner:true
 NoSwingingInvCleaner:false
 keepBlocksInvCleaner:true
@@ -290,7 +290,7 @@ RandomizeInvCleaner:true
 DelayAutoArmor:144.0,154.0
 WaitDelayAutoArmor:130.0,122.0
 WaitpastCleanAutoArmor:true
-OpenInvAutoArmor:true
+InvCleanerInventoryMode:Open
 NoMoveAutoArmor:false
 NoSwingingAutoArmor:false
 LongJumpMode:Verus b3863 Damage
@@ -464,3 +464,4 @@ Spider:false
 Sprint:true
 Phase:false
 Blink:false
+OCMessageforClient: Latest BlocksMC Config, it should not Autoban but may Staff alert. Created on January 7th 2024 by Yeti
