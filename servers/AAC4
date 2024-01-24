@@ -284,7 +284,7 @@ RandomizeChestStealer:false
 SmartChestStealer:true
 DelayInvCleaner:88.0,134.0
 WaitDelayInvCleaner:100.0,300.0
-OpenInvCleaner:false
+AutoArmorInventoryMode:Closed
 NoMoveInvCleaner:false
 NoSwingingInvCleaner:false
 keepBlocksInvCleaner:true
@@ -294,11 +294,11 @@ keepHoesInvCleaner:false
 RandomizeInvCleaner:false
 DelayAutoArmor:48.0,98.0
 WaitDelayAutoArmor:100.0,300.0
-WaitpastCleanAutoArmor:true
-OpenInvAutoArmor:false
+WaitpastCleanAutoArmor:Closed
+AutoArmorInventoryMode:false
 NoMoveAutoArmor:false
 NoSwingingAutoArmor:false
-LongJumpMode:AAC 442
+LongJumpMode:AAC 442 Glide
 FrequencyAirHopGlideLongJump:false
 BlinkPacketLimit:false
 BlinkMaxPackets:50.0
