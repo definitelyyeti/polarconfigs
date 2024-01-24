@@ -11,6 +11,7 @@ BoatBoostBoatFly:1.0
 BoatHeightBoatFly:1.0
 MotionFlightMode:0.0
 VerusFlightMode:Collide b3863
+SpeedBostVerusFlight:false
 NegativityFlightMode:Mini Bounce
 FrequencyFlightMode:1.0 Glide
 BlockGroundSlowDownNoSlowDown:100.0
@@ -86,6 +87,7 @@ RootSwiftSmoothRotationKillAura:false
 RandomCurvationSmoothRotationKillAura:false
 ModifyCurveSmoothRotationKillAura:false
 CurveSmoothModeRotationKillAura:Test
+RelativeSmoothLinearKillaura:false
 RandomizeRotationKillaura:false
 RandomValueKillaura:0.0,0.0
 YawBasicRandomValueKillaura:0.0,0.0
@@ -148,6 +150,7 @@ AutoBlockUnBlockOffsetKillAura:1.0
 SpeedMode:Ground
 BhopSpeedMode:Negativity
 VerusBhopSpeedMode:Boost
+SlowerVerusBhopSpeed:false
 VulcanBhopSpeedMode:Boost
 KarhuBhopSpeedMode:Old Low
 UpdatedNCPBhopSpeedMode:Timer
@@ -202,12 +205,14 @@ SmoothRotationScaffold:false
 PitchSpeedRotationScaffold:1.0,180.0
 YawSpeedRotationScaffold:1.0,180.0
 ScaffoldYawRotationMode:Fluent
-AngleValueScaffold:0.0
+AngleValueScaffold:0.0,0.0
 AdjustYawStaticScaffold:false
 YawStaticChangeScaffold:false
 RandomizeYawStaticChangeScaffold:false
 RandomizeYawScaffold:false
 RandomYawAngleValueScaffold:3.0,4.0
+SmoothRandomYawAngleValueScaffold:80.0,80.0
+ChangeRateYawRandomAngleScaffold:1.0
 ScaffoldPitchRotationMode:Fluent
 SensitivityScaffold:false
 AbstractMouseSensitivityFixScaffold:false
@@ -280,18 +285,18 @@ RandomizeChestStealer:false
 SmartChestStealer:false
 DelayInvCleaner:98.0,118.0
 WaitDelayInvCleaner:50.0,108.0
-OpenInvCleaner:false
+InvCleanerInventoryMode:Open
 NoMoveInvCleaner:false
 NoSwingingInvCleaner:false
-keepBlocksInvCleaner:true
-keepRodsInvCleaner:false
-keepPotionsInvCleaner:true
-keepHoesInvCleaner:false
+KeepInvCleaner:Potions=true
+KeepInvCleaner:Blocks=true
+KeepInvCleaner:Hoes=false
+KeepInvCleaner:Rods=false
 RandomizeInvCleaner:false
 DelayAutoArmor:92.0,102.0
 WaitDelayAutoArmor:100.0,300.0
 WaitpastCleanAutoArmor:false
-OpenInvAutoArmor:false
+AutoArmorInventoryMode:Open
 NoMoveAutoArmor:false
 NoSwingingAutoArmor:false
 LongJumpMode:Negativity
@@ -369,6 +374,7 @@ BlockFuseTimeTNTBlock:80.0
 BlockDurationTimeTNTBlock:1.0
 AutoSwitchSwordTNTBlock:false
 SpoofTitleAntiExploit:false
+RessourcePackAntiExploit:false
 AntiFallMode:Motion
 MotionValueAntiFallMode:0.1
 PacketAntiFallMode:Position=true
@@ -418,23 +424,21 @@ BlockBreakerSmoothRotation:false
 PitchSpeedRotationBlockBreaker:1.0,180.0
 YawSpeedRotationBlockBreaker:1.0,180.0
 BlockBreakerCorrectMovement:false
-Speed:false
-HighJump:false
+NoWebMode:Cancel
 InvCleaner:true
 AutoArmor:true
-LongJump:false
 NoSlowdown:true
 Flight:false
 Velocity:true
 QuickStop:true
-PacketSpoofer:false
 WaterWalk:true
+PacketSpoofer:false
 KillAura:false
 TargetStrafe:true
 HotbarHelper:false
 BlockBreaker:false
-ChestStealer:false
 NoFall:false
+ChestStealer:false
 FastConsume:false
 NoJumpDelay:true
 Step:false
@@ -447,7 +451,9 @@ AntiExploit:false
 FastBreak:true
 PingSpoof:false
 FastPlace:true
+LongJump:false
 FastClimb:false
+HighJump:false
 NoRotate:false
 TNTBlock:false
 SafeWalk:false
@@ -463,5 +469,8 @@ AntiBot:false
 Strafe:true
 Spider:false
 Sprint:true
+Speed:false
 Phase:false
+NoWeb:false
 Blink:false
+OCMessageforClient: Latest NegativityV2 (2.7.1) Config. Created on December 19th 2023 by Yeti
