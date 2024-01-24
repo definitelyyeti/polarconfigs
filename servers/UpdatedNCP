@@ -11,6 +11,7 @@ BoatBoostBoatFly:1.0
 BoatHeightBoatFly:1.0
 MotionFlightMode:0.0
 VerusFlightMode:Bounce
+SpeedBostVerusFlight:false
 NegativityFlightMode:Mini Bounce
 FrequencyFlightMode:Custom
 BlockGroundSlowDownNoSlowDown:100.0
@@ -86,6 +87,7 @@ RootSwiftSmoothRotationKillAura:false
 RandomCurvationSmoothRotationKillAura:false
 ModifyCurveSmoothRotationKillAura:false
 CurveSmoothModeRotationKillAura:Test
+RelativeSmoothLinearKillaura:false
 RandomizeRotationKillaura:false
 RandomValueKillaura:0.0,0.0
 YawBasicRandomValueKillaura:0.0,0.0
@@ -148,6 +150,7 @@ AutoBlockUnBlockOffsetKillAura:1.0
 SpeedMode:Bhop
 BhopSpeedMode:UpdatedNCP
 VerusBhopSpeedMode:Boost
+SlowerVerusBhopSpeed:false
 VulcanBhopSpeedMode:Boost
 KarhuBhopSpeedMode:Old Low
 UpdatedNCPBhopSpeedMode:3.17.1 b152
@@ -202,12 +205,14 @@ SmoothRotationScaffold:true
 PitchSpeedRotationScaffold:149.0,180.0
 YawSpeedRotationScaffold:153.5,180.0
 ScaffoldYawRotationMode:Fluent
-AngleValueScaffold:1.0
+AngleValueScaffold:1.0,1.0
 AdjustYawStaticScaffold:false
 YawStaticChangeScaffold:false
 RandomizeYawStaticChangeScaffold:false
 RandomizeYawScaffold:false
 RandomYawAngleValueScaffold:3.0,4.0
+SmoothRandomYawAngleValueScaffold:80.0,80.0
+ChangeRateYawRandomAngleScaffold:1.0
 ScaffoldPitchRotationMode:Fluent
 SensitivityScaffold:true
 AbstractMouseSensitivityFixScaffold:true
@@ -280,18 +285,18 @@ RandomizeChestStealer:true
 SmartChestStealer:true
 DelayInvCleaner:50.0,64.0
 WaitDelayInvCleaner:98.0,118.0
-OpenInvCleaner:false
+InvCleanerInventoryMode:Open
 NoMoveInvCleaner:false
 NoSwingingInvCleaner:false
-keepBlocksInvCleaner:true
-keepRodsInvCleaner:false
-keepPotionsInvCleaner:true
-keepHoesInvCleaner:false
+KeepInvCleaner:Potions=true
+KeepInvCleaner:Blocks=true
+KeepInvCleaner:Hoes=false
+KeepInvCleaner:Rods=false
 RandomizeInvCleaner:true
 DelayAutoArmor:36.0,82.0
 WaitDelayAutoArmor:100.0,300.0
 WaitpastCleanAutoArmor:false
-OpenInvAutoArmor:false
+AutoArmorInventoryMode:Open
 NoMoveAutoArmor:false
 NoSwingingAutoArmor:false
 LongJumpMode:NCP b1152
@@ -369,6 +374,7 @@ BlockFuseTimeTNTBlock:79.0
 BlockDurationTimeTNTBlock:5.0
 AutoSwitchSwordTNTBlock:true
 SpoofTitleAntiExploit:false
+RessourcePackAntiExploit:false
 AntiFallMode:Packet
 MotionValueAntiFallMode:0.4
 PacketAntiFallMode:Position=true
@@ -418,14 +424,14 @@ BlockBreakerSmoothRotation:false
 PitchSpeedRotationBlockBreaker:1.0,180.0
 YawSpeedRotationBlockBreaker:1.0,180.0
 BlockBreakerCorrectMovement:false
+NoWebMode:Cancel
 NoSlowdown:true
 WaterWalk:true
+FastConsume:false
 InvCleaner:true
 AutoArmor:true
-LongJump:false
-FastConsume:false
 QuickStop:true
-Speed:false
+Flight:false
 Velocity:true
 PacketSpoofer:false
 AntiFall:true
@@ -433,11 +439,10 @@ KillAura:false
 TargetStrafe:true
 HotbarHelper:false
 BlockBreaker:false
+NoFall:false
 ChestStealer:false
 NoJumpDelay:true
-Flight:false
 MovementFix:false
-Step:false
 TestModule:false
 BackRotate:false
 Triggerbot:false
@@ -446,7 +451,9 @@ AntiExploit:false
 FastBreak:false
 PingSpoof:false
 FastPlace:true
+LongJump:false
 FastClimb:false
+Step:false
 HighJump:false
 NoRotate:true
 TNTBlock:true
@@ -457,11 +464,13 @@ Teleport:false
 Criticals:false
 FastBow:false
 Pattern:false
-Blink:false
 InvWalk:true
 AntiBot:false
 Strafe:true
 Spider:false
 Sprint:true
-NoFall:false
+Speed:false
 Phase:false
+NoWeb:false
+Blink:false
+OCMessageforClient: Latest UpdatedNCP Config, some weird Flags are possible. Created on January 12th 2024 by Yeti
