@@ -277,7 +277,7 @@ RandomizeChestStealer:false
 SmartChestStealer:false
 DelayInvCleaner:62.0,88.0
 WaitDelayInvCleaner:100.0,300.0
-OpenInvCleaner:false
+InvCleanerInventoryMode:Closed
 NoMoveInvCleaner:true
 NoSwingingInvCleaner:false
 keepBlocksInvCleaner:true
@@ -288,7 +288,7 @@ RandomizeInvCleaner:false
 DelayAutoArmor:42.0,66.0
 WaitDelayAutoArmor:100.0,300.0
 WaitpastCleanAutoArmor:true
-OpenInvAutoArmor:false
+AutoArmorInventoryMode:Closed
 NoMoveAutoArmor:true
 NoSwingingAutoArmor:true
 LongJumpMode:NCP b1152
@@ -445,3 +445,4 @@ Strafe:false
 Sprint:true
 Phase:false
 Blink:false
+OCMessageforClient: Matrix 7.7.4 Config tested on Loyisa. Created December 18th 2023 by Yeti
