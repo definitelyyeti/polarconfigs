@@ -277,7 +277,7 @@ RandomizeChestStealer:true
 SmartChestStealer:false
 DelayInvCleaner:74.0,126.0
 WaitDelayInvCleaner:78.0,112.0
-OpenInvCleaner:true
+InvCleanerInventoryMode:Open
 NoMoveInvCleaner:true
 NoSwingingInvCleaner:true
 keepBlocksInvCleaner:true
@@ -288,7 +288,7 @@ RandomizeInvCleaner:true
 DelayAutoArmor:88.0,108.0
 WaitDelayAutoArmor:74.0,98.0
 WaitpastCleanAutoArmor:true
-OpenInvAutoArmor:true
+AutoArmorInventoryMode:Open
 NoMoveAutoArmor:true
 NoSwingingAutoArmor:true
 LongJumpMode:NCP b1152
@@ -445,3 +445,4 @@ Sprint:true
 NoFall:false
 Phase:false
 Blink:false
+OCMessageforClient: Latest Grim Config, some Movement Flags are possible. Created on December 17th 2023 by Yeti
