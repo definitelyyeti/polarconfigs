@@ -277,7 +277,7 @@ RandomizeChestStealer:true
 SmartChestStealer:false
 DelayInvCleaner:30.0,50.0
 WaitDelayInvCleaner:44.0,60.0
-OpenInvCleaner:true
+InvCleanerInventoryMode:Open
 NoMoveInvCleaner:true
 NoSwingingInvCleaner:true
 keepBlocksInvCleaner:true
@@ -288,7 +288,7 @@ RandomizeInvCleaner:true
 DelayAutoArmor:62.0,112.0
 WaitDelayAutoArmor:52.0,84.0
 WaitpastCleanAutoArmor:true
-OpenInvAutoArmor:true
+AutoArmorInventoryMode:Open
 NoMoveAutoArmor:true
 NoSwingingAutoArmor:true
 LongJumpMode:AAC 442
@@ -445,3 +445,4 @@ Spider:false
 Sprint:true
 Phase:false
 Blink:false
+OCMessageforClient: Latest AAC5 Config, some Movement Flags are possible. Created on December 17th 2023 by Yeti
