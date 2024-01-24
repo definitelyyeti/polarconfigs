@@ -11,6 +11,7 @@ BoatBoostBoatFly:1.0
 BoatHeightBoatFly:1.0
 MotionFlightMode:0.0
 VerusFlightMode:Bounce
+SpeedBostVerusFlight:false
 NegativityFlightMode:Mini Bounce
 FrequencyFlightMode:Custom
 BlockGroundSlowDownNoSlowDown:100.0
@@ -86,6 +87,7 @@ RootSwiftSmoothRotationKillAura:false
 RandomCurvationSmoothRotationKillAura:false
 ModifyCurveSmoothRotationKillAura:false
 CurveSmoothModeRotationKillAura:Test
+RelativeSmoothLinearKillaura:false
 RandomizeRotationKillaura:false
 RandomValueKillaura:0.0,0.0
 YawBasicRandomValueKillaura:0.0,0.0
@@ -148,6 +150,7 @@ AutoBlockUnBlockOffsetKillAura:1.0
 SpeedMode:Bhop
 BhopSpeedMode:Spartan
 VerusBhopSpeedMode:Boost
+SlowerVerusBhopSpeed:false
 VulcanBhopSpeedMode:Boost
 KarhuBhopSpeedMode:Old Low
 UpdatedNCPBhopSpeedMode:Timer
@@ -160,6 +163,7 @@ DACTeleportsSpeedBhop:1.0
 DACBoostDelay:1.0
 KauriBhopSpeedMode:2.19.2
 SpartanBhopSpeedMode:P529 Mini
+NegativitySpeedMode:271
 GroundSpeedMode:Spartan P504
 OtherSpeedMode:Test
 GroundTimerOtherSpeed:1.0
@@ -201,12 +205,14 @@ SmoothRotationScaffold:false
 PitchSpeedRotationScaffold:1.0,180.0
 YawSpeedRotationScaffold:1.0,180.0
 ScaffoldYawRotationMode:Fluent
-AngleValueScaffold:0.0
+AngleValueScaffold:0.0,0.0
 AdjustYawStaticScaffold:false
 YawStaticChangeScaffold:false
 RandomizeYawStaticChangeScaffold:false
 RandomizeYawScaffold:false
 RandomYawAngleValueScaffold:3.0,4.0
+SmoothRandomYawAngleValueScaffold:80.0,80.0
+ChangeRateYawRandomAngleScaffold:1.0
 ScaffoldPitchRotationMode:Fluent
 SensitivityScaffold:true
 AbstractMouseSensitivityFixScaffold:true
@@ -260,8 +266,8 @@ TowerDelayScaffold:118.0,171.0
 TowerScaffold:true
 TowerScaffoldMode:Spartan P505
 InstantTeleportTowerScaffold:false
-ScaffoldMode:Default
 ScaffoldTowerMove:Always
+ScaffoldMode:Default
 BreezilyMovementDelayScaffold:0.0
 SpiderMode:Negativity V2
 AwaitDamageHighJumpMode:false
@@ -279,18 +285,18 @@ RandomizeChestStealer:false
 SmartChestStealer:false
 DelayInvCleaner:40.0,78.0
 WaitDelayInvCleaner:78.0,102.0
-OpenInvCleaner:false
+InvCleanerInventoryMode:Closed
 NoMoveInvCleaner:false
 NoSwingingInvCleaner:false
-keepBlocksInvCleaner:true
-keepRodsInvCleaner:true
-keepPotionsInvCleaner:true
-keepHoesInvCleaner:false
+KeepInvCleaner:Potions=true
+KeepInvCleaner:Blocks=true
+KeepInvCleaner:Hoes=false
+KeepInvCleaner:Rods=true
 RandomizeInvCleaner:true
 DelayAutoArmor:62.0,70.0
 WaitDelayAutoArmor:100.0,300.0
 WaitpastCleanAutoArmor:true
-OpenInvAutoArmor:false
+AutoArmorInventoryMode:Closed
 NoMoveAutoArmor:false
 NoSwingingAutoArmor:false
 LongJumpMode:Spartan P529
@@ -368,6 +374,7 @@ BlockFuseTimeTNTBlock:80.0
 BlockDurationTimeTNTBlock:1.0
 AutoSwitchSwordTNTBlock:false
 SpoofTitleAntiExploit:false
+RessourcePackAntiExploit:false
 AntiFallMode:Packet
 MotionValueAntiFallMode:0.4
 PacketAntiFallMode:Position=true
@@ -417,20 +424,23 @@ BlockBreakerSmoothRotation:false
 PitchSpeedRotationBlockBreaker:1.0,180.0
 YawSpeedRotationBlockBreaker:1.0,180.0
 BlockBreakerCorrectMovement:false
+NoWebMode:Cancel
 NoFall:true
 InvCleaner:true
 AutoArmor:true
-Speed:false
+FastConsume:false
 WaterWalk:true
 NoSlowdown:true
 QuickStop:true
+Flight:false
 Velocity:true
 PacketSpoofer:false
+AntiFall:false
+KillAura:false
 TargetStrafe:false
 HotbarHelper:false
 BlockBreaker:false
 ChestStealer:false
-FastConsume:false
 NoJumpDelay:true
 MovementFix:false
 TestModule:false
@@ -443,6 +453,7 @@ PingSpoof:false
 FastPlace:true
 LongJump:false
 FastClimb:false
+Step:false
 HighJump:false
 NoRotate:false
 TNTBlock:false
@@ -452,15 +463,13 @@ AutoTool:true
 Teleport:false
 Criticals:false
 FastBow:false
-KillAura:false
 Pattern:false
 InvWalk:true
-AntiFall:false
 AntiBot:false
 Strafe:true
 Spider:false
 Sprint:true
+Speed:false
 Phase:false
-Flight:false
-Step:false
+NoWeb:false
 Blink:false
