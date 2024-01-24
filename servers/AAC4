@@ -294,8 +294,8 @@ keepHoesInvCleaner:false
 RandomizeInvCleaner:false
 DelayAutoArmor:48.0,98.0
 WaitDelayAutoArmor:100.0,300.0
-WaitpastCleanAutoArmor:Closed
-AutoArmorInventoryMode:false
+WaitpastCleanAutoArmor:true
+AutoArmorInventoryMode:Closed
 NoMoveAutoArmor:false
 NoSwingingAutoArmor:false
 LongJumpMode:AAC 442 Glide
