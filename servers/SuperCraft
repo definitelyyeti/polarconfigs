@@ -11,6 +11,7 @@ BoatBoostBoatFly:2.8
 BoatHeightBoatFly:2.8
 MotionFlightMode:0.0
 VerusFlightMode:Bounce
+SpeedBostVerusFlight:false
 NegativityFlightMode:Mini Bounce
 FrequencyFlightMode:Custom
 BlockGroundSlowDownNoSlowDown:100.0
@@ -53,10 +54,12 @@ PushPlusPlusVelocity:false
 VoidCheckVelocity:true
 FireCheckVelocity:true
 PotionCheckVelocity:true
-AttackPreRangeKillaura:0.4
 AttackRangeKillaura:3.7
+AttackPreRangeKillaura:0.4
 AttackExtraRange:false
 MaxExtendRangeAttackRangeKillaura:1.0
+AttackFirstExtraRange:false
+FirstHitAttackExtraRangeKillaura:6.0
 AttackDelayKillaura:82.0,180.0
 SmartDelayKillaura:true
 PatternDelayKillaura:false
@@ -84,6 +87,7 @@ RootSwiftSmoothRotationKillAura:false
 RandomCurvationSmoothRotationKillAura:true
 ModifyCurveSmoothRotationKillAura:true
 CurveSmoothModeRotationKillAura:Test
+RelativeSmoothLinearKillaura:false
 RandomizeRotationKillaura:true
 RandomValueKillaura:2.4,3.1
 YawBasicRandomValueKillaura:-3.0,5.5
@@ -133,6 +137,7 @@ PreSwingKillAura:true
 UpdatedCombatKillAura:false
 AttackSlowDownKillaura:false
 MotionAttackSlowDownKillaura:1.0
+FakeAutoBlockKillaura:false
 AutoBlockKillaura:false
 AutoBlockDistanceKillaura:3.3
 BlockEventKillAura:Post
@@ -145,6 +150,7 @@ AutoBlockUnBlockOffsetKillAura:1.0
 SpeedMode:Bhop
 BhopSpeedMode:Vulcan
 VerusBhopSpeedMode:Boost
+SlowerVerusBhopSpeed:false
 VulcanBhopSpeedMode:Boost
 KarhuBhopSpeedMode:Old Low
 UpdatedNCPBhopSpeedMode:Timer
@@ -155,6 +161,9 @@ AACBhopSpeedMode:442
 DACBhopSpeedMode:107 Boost
 DACTeleportsSpeedBhop:1.0
 DACBoostDelay:1.0
+KauriBhopSpeedMode:2.19.2
+SpartanBhopSpeedMode:P495
+NegativitySpeedMode:271
 GroundSpeedMode:Vulcan 272
 OtherSpeedMode:Jump
 GroundTimerOtherSpeed:1.0
@@ -164,9 +173,10 @@ SpartanP495TimerOtherSpeed:false
 JumpBoostOtherSpeed:0.2
 JumpMotionOtherSpeed:0.42
 StopOnHitSpeed:true
-StopOnHitStrafe:false
-OnlyGroundStrafe:false
 OnlyTargetStrafe:false
+HurttimeHitStrafe:Ignore
+ConditionStrafe:Always
+TicksStrafe:0.0
 NofallMode:Vulcan 272
 NormalNofallMode:Packet
 AACNofallMode:442 Spoof
@@ -195,12 +205,14 @@ SmoothRotationScaffold:true
 PitchSpeedRotationScaffold:37.5,40.0
 YawSpeedRotationScaffold:22.5,31.0
 ScaffoldYawRotationMode:Fluent
-AngleValueScaffold:0.0
+AngleValueScaffold:0.0,0.0
 AdjustYawStaticScaffold:false
 YawStaticChangeScaffold:false
 RandomizeYawStaticChangeScaffold:false
 RandomizeYawScaffold:true
 RandomYawAngleValueScaffold:-4.0,4.0
+SmoothRandomYawAngleValueScaffold:80.0,80.0
+ChangeRateYawRandomAngleScaffold:1.0
 ScaffoldPitchRotationMode:Fluent
 SensitivityScaffold:true
 AbstractMouseSensitivityFixScaffold:true
@@ -231,6 +243,8 @@ EagleSneakScaffold:true
 EagleSneakModeScaffold:Edge
 SneakScaffoldEagleDelay:0.0
 SneakModeScaffold:Normal
+SneakSpeedScaffold:0.0
+KeepEyeSightScaffoldSneak:false
 SameYScaffold:false
 SameYOnlyMoveScaffold:false
 EdgePlaceScaffold:true
@@ -251,8 +265,8 @@ ReduceDelayTowerScaffold:false
 TowerDelayScaffold:147.0,188.0
 TowerScaffold:false
 TowerScaffoldMode:Vulcan 272 High
-NoMoveTowerScaffold:false
 InstantTeleportTowerScaffold:false
+ScaffoldTowerMove:No
 ScaffoldMode:Default
 BreezilyMovementDelayScaffold:0.0
 SpiderMode:ACR 199
@@ -271,32 +285,36 @@ RandomizeChestStealer:true
 SmartChestStealer:true
 DelayInvCleaner:74.0,126.0
 WaitDelayInvCleaner:78.0,112.0
-OpenInvCleaner:true
+InvCleanerInventoryMode:Open
 NoMoveInvCleaner:false
 NoSwingingInvCleaner:false
-keepBlocksInvCleaner:true
-keepRodsInvCleaner:false
-keepPotionsInvCleaner:true
-keepHoesInvCleaner:false
+KeepInvCleaner:Potions=true
+KeepInvCleaner:Blocks=true
+KeepInvCleaner:Hoes=false
+KeepInvCleaner:Rods=false
 RandomizeInvCleaner:true
 DelayAutoArmor:88.0,108.0
 WaitDelayAutoArmor:74.0,98.0
 WaitpastCleanAutoArmor:true
-OpenInvAutoArmor:true
+AutoArmorInventoryMode:Open
 NoMoveAutoArmor:false
 NoSwingingAutoArmor:false
 LongJumpMode:Vulcan 272
 FrequencyAirHopGlideLongJump:false
 BlinkPacketLimit:false
 BlinkMaxPackets:50.0
+BlinkDistanceLimit:false
+BlinkMaxDistance:10.0
 WaterWalkMode:Vulcan 271
 VulcanWaterWalkMode:271
 NCPWaterWalkMode:Solid
+SpartanWaterWalkMode:P529
 DelayPingSpoof:0.0,800.0
 FakeRotateNoRotate:false
 FakeRotateDurationNoRotate:15.0
 SilentAutoTool:true
 SpoofSilentAutoTool:false
+ClientSideGuiWalk:false
 StopSprintGuiWalk:false
 FreeLookGuiWalk:false
 MotionInVwalk:false
@@ -332,7 +350,7 @@ ClickFastPlace:0.0,0.0
 TargetstrafeRange:2.0
 OnlySpeedTargetStrafe:false
 PacketSpooferModes:S08Flag=false
-PacketSpooferModes:VerusFly=true
+PacketSpooferModes:VerusFly=false
 PacketSpooferModes:Test=false
 PacketSpooferModes:C0FCancel=false
 PacketSpooferModes:Spectate=false
@@ -356,6 +374,7 @@ BlockFuseTimeTNTBlock:80.0
 BlockDurationTimeTNTBlock:3.0
 AutoSwitchSwordTNTBlock:true
 SpoofTitleAntiExploit:false
+RessourcePackAntiExploit:false
 AntiFallMode:Packet
 MotionValueAntiFallMode:0.1
 PacketAntiFallMode:Position=true
@@ -373,6 +392,7 @@ ExcludeTargetStrafeMovementFix:false
 ModifyStrafeMovementFix:false
 FastBreakMode:Normal
 SpeedFastBreak:1.0
+PacketsFastBreak:1.0
 TicksFastConsume:13.0
 PotionsFastConsume:false
 FastConsumeMode:Packet
@@ -390,20 +410,38 @@ TimerFastBow:1.0
 SlowMovementFastBow:false
 PacketAmountFastBow:30.0
 TimercustomFastBow:1.0
-PacketSpoofer:false
+TeleportMode:Vanilla
+BlockBreakerModeBlock:Bed=true
+BlockBreakerModeBlock:Egg=false
+BlockBreakerModeBlock:Cake=false
+BlockBreakerMode:Basic
+BlockBreakerRange:4.0
+BlockBreakerDelay:0.0
+BedBreakBlockBreakerMode:Normal
+SurroundBreakBlockBreakerMode:Normal
+BlockBreakerSwing:false
+BlockBreakerSmoothRotation:false
+PitchSpeedRotationBlockBreaker:1.0,180.0
+YawSpeedRotationBlockBreaker:1.0,180.0
+BlockBreakerCorrectMovement:false
+NoWebMode:Cancel
+WaterWalk:false
+FastConsume:false
 InvCleaner:true
 AutoArmor:true
-Speed:false
 NoSlowdown:true
+QuickStop:false
+Flight:false
 Velocity:false
-KillAura:false
+PacketSpoofer:false
 AntiFall:false
+KillAura:false
 TargetStrafe:false
 HotbarHelper:true
+BlockBreaker:false
+NoFall:false
 ChestStealer:false
-FastConsume:false
 NoJumpDelay:true
-Flight:false
 MovementFix:false
 TestModule:false
 BackRotate:false
@@ -414,15 +452,15 @@ FastBreak:false
 PingSpoof:false
 FastPlace:false
 LongJump:false
-WaterWalk:false
-QuickStop:false
 FastClimb:false
+Step:false
 HighJump:false
 NoRotate:false
 TNTBlock:true
 SafeWalk:false
 Scaffold:false
 AutoTool:true
+Teleport:false
 Criticals:false
 FastBow:false
 Pattern:false
@@ -431,7 +469,8 @@ AntiBot:false
 Strafe:false
 Spider:false
 Sprint:true
-NoFall:false
+Speed:false
 Phase:false
-Step:false
+NoWeb:false
 Blink:false
+OCMessageforClient: SuperCraft Config, it could Autoban. Created on December 27th 2023 by Yeti
