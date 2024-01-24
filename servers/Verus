@@ -11,6 +11,7 @@ BoatBoostBoatFly:1.0
 BoatHeightBoatFly:1.0
 MotionFlightMode:0.0
 VerusFlightMode:Collide b3863
+SpeedBostVerusFlight:true
 NegativityFlightMode:Mini Bounce
 FrequencyFlightMode:Custom
 BlockGroundSlowDownNoSlowDown:100.0
@@ -59,7 +60,7 @@ AttackExtraRange:false
 MaxExtendRangeAttackRangeKillaura:1.0
 AttackFirstExtraRange:false
 FirstHitAttackExtraRangeKillaura:6.0
-AttackDelayKillaura:97.0,246.0
+AttackDelayKillaura:153.0,246.0
 SmartDelayKillaura:false
 PatternDelayKillaura:false
 PatternDelayModeKillaura:File
@@ -86,6 +87,7 @@ RootSwiftSmoothRotationKillAura:false
 RandomCurvationSmoothRotationKillAura:false
 ModifyCurveSmoothRotationKillAura:false
 CurveSmoothModeRotationKillAura:Test
+RelativeSmoothLinearKillaura:false
 RandomizeRotationKillaura:false
 RandomValueKillaura:4.7,7.2
 YawBasicRandomValueKillaura:-4.0,4.0
@@ -138,16 +140,17 @@ MotionAttackSlowDownKillaura:1.0
 FakeAutoBlockKillaura:false
 AutoBlockKillaura:true
 AutoBlockDistanceKillaura:3.65
-BlockEventKillAura:Post
+BlockEventKillAura:Pre
 BlockModeKillaura:Normal
 AutoBlockFillAnimationKillaura:false
-AutoBlockPostBlockAttack:true
+AutoBlockPostBlockAttack:false
 AutoBlockPostBlockAttackDelay:5.0
 AutoBlockUnBlockKillaura:false
-AutoBlockUnBlockOffsetKillAura:1.0
+AutoBlockUnBlockOffsetKillAura:3.0
 SpeedMode:Bhop
 BhopSpeedMode:Verus
-VerusBhopSpeedMode:b3863 Low
+VerusBhopSpeedMode:b3896 Low
+SlowerVerusBhopSpeed:false
 VulcanBhopSpeedMode:Boost
 KarhuBhopSpeedMode:Old Low
 UpdatedNCPBhopSpeedMode:Timer
@@ -202,12 +205,14 @@ SmoothRotationScaffold:false
 PitchSpeedRotationScaffold:1.0,1.0
 YawSpeedRotationScaffold:1.0,180.0
 ScaffoldYawRotationMode:Fluent
-AngleValueScaffold:0.0
+AngleValueScaffold:0.0,0.0
 AdjustYawStaticScaffold:false
 YawStaticChangeScaffold:false
 RandomizeYawStaticChangeScaffold:false
 RandomizeYawScaffold:false
 RandomYawAngleValueScaffold:3.0,4.0
+SmoothRandomYawAngleValueScaffold:13.0,23.0
+ChangeRateYawRandomAngleScaffold:5.0
 ScaffoldPitchRotationMode:Fluent
 SensitivityScaffold:true
 AbstractMouseSensitivityFixScaffold:true
@@ -280,18 +285,18 @@ RandomizeChestStealer:true
 SmartChestStealer:true
 DelayInvCleaner:26.0,64.0
 WaitDelayInvCleaner:20.0,78.0
-OpenInvCleaner:false
+InvCleanerInventoryMode:Closed
 NoMoveInvCleaner:true
 NoSwingingInvCleaner:false
-keepBlocksInvCleaner:true
-keepRodsInvCleaner:false
-keepPotionsInvCleaner:true
-keepHoesInvCleaner:false
+KeepInvCleaner:Potions=true
+KeepInvCleaner:Blocks=true
+KeepInvCleaner:Hoes=false
+KeepInvCleaner:Rods=false
 RandomizeInvCleaner:true
 DelayAutoArmor:52.0,72.0
 WaitDelayAutoArmor:100.0,300.0
 WaitpastCleanAutoArmor:false
-OpenInvAutoArmor:false
+AutoArmorInventoryMode:Closed
 NoMoveAutoArmor:false
 NoSwingingAutoArmor:false
 LongJumpMode:Verus b3863 Flag
@@ -345,7 +350,7 @@ ClickFastPlace:0.0,2.0
 TargetstrafeRange:4.5
 OnlySpeedTargetStrafe:true
 PacketSpooferModes:S08Flag=false
-PacketSpooferModes:VerusFly=true
+PacketSpooferModes:VerusFly=false
 PacketSpooferModes:Test=false
 PacketSpooferModes:C0FCancel=false
 PacketSpooferModes:Spectate=false
@@ -369,6 +374,7 @@ BlockFuseTimeTNTBlock:80.0
 BlockDurationTimeTNTBlock:2.0
 AutoSwitchSwordTNTBlock:true
 SpoofTitleAntiExploit:false
+RessourcePackAntiExploit:false
 AntiFallMode:Packet
 MotionValueAntiFallMode:0.4
 PacketAntiFallMode:Position=true
@@ -418,9 +424,9 @@ BlockBreakerSmoothRotation:false
 PitchSpeedRotationBlockBreaker:1.0,180.0
 YawSpeedRotationBlockBreaker:1.0,180.0
 BlockBreakerCorrectMovement:false
+NoWebMode:Cancel
 InvCleaner:true
 AutoArmor:true
-Spider:false
 Speed:false
 NoSlowdown:true
 WaterWalk:true
@@ -428,18 +434,18 @@ QuickStop:true
 FastClimb:true
 Velocity:true
 PacketSpoofer:false
+KillAura:false
 TargetStrafe:true
 HotbarHelper:false
 BlockBreaker:true
-ChestStealer:false
 NoFall:true
+ChestStealer:false
 FastConsume:false
 NoJumpDelay:true
-MovementFix:false
 Flight:false
+MovementFix:false
 TestModule:false
 BackRotate:false
-Step:true
 Triggerbot:false
 AntiCactus:true
 AntiExploit:false
@@ -456,12 +462,14 @@ AutoTool:true
 Teleport:false
 Criticals:false
 FastBow:false
-KillAura:false
 Pattern:false
 InvWalk:true
 AntiFall:false
 AntiBot:false
 Strafe:true
+Spider:false
 Sprint:true
 Phase:false
+NoWeb:false
+Step:false
 Blink:false
