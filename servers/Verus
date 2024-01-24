@@ -10,7 +10,7 @@ BoatFlightMode:Custom
 BoatBoostBoatFly:1.0
 BoatHeightBoatFly:1.0
 MotionFlightMode:0.0
-VerusFlightMode:Collide b3863
+VerusFlightMode:b3896 Boost
 SpeedBostVerusFlight:true
 NegativityFlightMode:Mini Bounce
 FrequencyFlightMode:Custom
