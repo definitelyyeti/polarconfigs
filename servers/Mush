@@ -11,6 +11,7 @@ BoatBoostBoatFly:1.0
 BoatHeightBoatFly:1.0
 MotionFlightMode:0.0
 VerusFlightMode:Collide b3863
+SpeedBostVerusFlight:false
 NegativityFlightMode:Mini Bounce
 FrequencyFlightMode:1.0 Glide
 BlockGroundSlowDownNoSlowDown:100.0
@@ -53,10 +54,12 @@ PushPlusPlusVelocity:false
 VoidCheckVelocity:false
 FireCheckVelocity:false
 PotionCheckVelocity:false
-AttackPreRangeKillaura:0.0
 AttackRangeKillaura:4.2
+AttackPreRangeKillaura:0.0
 AttackExtraRange:false
 MaxExtendRangeAttackRangeKillaura:1.0
+AttackFirstExtraRange:false
+FirstHitAttackExtraRangeKillaura:6.0
 AttackDelayKillaura:71.0,122.0
 SmartDelayKillaura:false
 PatternDelayKillaura:true
@@ -84,6 +87,7 @@ RootSwiftSmoothRotationKillAura:false
 RandomCurvationSmoothRotationKillAura:false
 ModifyCurveSmoothRotationKillAura:false
 CurveSmoothModeRotationKillAura:Test
+RelativeSmoothLinearKillaura:false
 RandomizeRotationKillaura:false
 RandomValueKillaura:0.0,0.0
 YawBasicRandomValueKillaura:0.0,0.0
@@ -146,6 +150,7 @@ AutoBlockUnBlockOffsetKillAura:1.0
 SpeedMode:Ground
 BhopSpeedMode:Negativity
 VerusBhopSpeedMode:Boost
+SlowerVerusBhopSpeed:false
 VulcanBhopSpeedMode:Boost
 KarhuBhopSpeedMode:Old Low
 UpdatedNCPBhopSpeedMode:Timer
@@ -157,6 +162,8 @@ DACBhopSpeedMode:107 Boost
 DACTeleportsSpeedBhop:1.0
 DACBoostDelay:1.0
 KauriBhopSpeedMode:2.19.2
+SpartanBhopSpeedMode:P495
+NegativitySpeedMode:271
 GroundSpeedMode:Negativity
 OtherSpeedMode:Jump
 GroundTimerOtherSpeed:1.0
@@ -166,9 +173,10 @@ SpartanP495TimerOtherSpeed:false
 JumpBoostOtherSpeed:0.2
 JumpMotionOtherSpeed:0.42
 StopOnHitSpeed:false
-StopOnHitStrafe:false
-OnlyGroundStrafe:false
 OnlyTargetStrafe:false
+HurttimeHitStrafe:Ignore
+ConditionStrafe:Always
+TicksStrafe:0.0
 NofallMode:Collide
 NormalNofallMode:Packet
 AACNofallMode:442 Spoof
@@ -190,19 +198,21 @@ StepPacketDelay:1.0
 StepPacket:false
 KarhuStepMode:267 Motion
 ClickScaffold:0.0,0.0
-DelayScaffold:81.0,117.0
-SafeWalkScaffold:true
+DelayScaffold:1.0,1.0
+SafeWalkScaffold:false
 GroundSafeWalkScaffold:false
 SmoothRotationScaffold:false
 PitchSpeedRotationScaffold:1.0,180.0
 YawSpeedRotationScaffold:1.0,180.0
 ScaffoldYawRotationMode:Fluent
-AngleValueScaffold:0.0
+AngleValueScaffold:0.0,0.0
 AdjustYawStaticScaffold:false
 YawStaticChangeScaffold:false
 RandomizeYawStaticChangeScaffold:false
 RandomizeYawScaffold:false
 RandomYawAngleValueScaffold:3.0,4.0
+SmoothRandomYawAngleValueScaffold:80.0,80.0
+ChangeRateYawRandomAngleScaffold:1.0
 ScaffoldPitchRotationMode:Fluent
 SensitivityScaffold:false
 AbstractMouseSensitivityFixScaffold:false
@@ -221,8 +231,8 @@ SilentCorrectMovementScaffold:false
 SilentCorrectPSeudoMovementScaffold:false
 SilentCorrectMovementModeScaffold:Simple
 ModifyStrafeCorrectMovementScaffold:false
-ChangeItemScaffold:false
-SilentChangeItemScaffold:false
+ChangeItemScaffold:true
+SilentChangeItemScaffold:true
 ScaffoldSilentMode:Normal
 SwitchSlotSilentPacketScaffold:false
 ReplaceSilentPacketScaffold:false
@@ -233,6 +243,8 @@ EagleSneakScaffold:false
 EagleSneakModeScaffold:Edge
 SneakScaffoldEagleDelay:0.0
 SneakModeScaffold:Normal
+SneakSpeedScaffold:0.0
+KeepEyeSightScaffoldSneak:false
 SameYScaffold:false
 SameYOnlyMoveScaffold:false
 EdgePlaceScaffold:false
@@ -241,20 +253,20 @@ EdgeDistanceJumpScaffold:0.25
 EdgeDistanceDownScaffold:0.8
 CheckAngleScaffold:false
 AirCheckScaffold:false
-ScaffoldPlaceMode:Legit
+ScaffoldPlaceMode:Normal
 ScaffoldRayTraceMode:Legit
 ScaffoldVecMode:Directional
 ScaffoldVecValue:0.0,0.0
 RayTraceVecScaffold:false
-RandomizeVecScaffold:false
+RandomizeVecScaffold:true
 PlaceEventScaffold:On
 SwingScaffold:true
 ReduceDelayTowerScaffold:false
 TowerDelayScaffold:1.0,750.0
 TowerScaffold:true
-TowerScaffoldMode:Motion
-NoMoveTowerScaffold:true
+TowerScaffoldMode:NCP Lowhop
 InstantTeleportTowerScaffold:false
+ScaffoldTowerMove:Always
 ScaffoldMode:Default
 BreezilyMovementDelayScaffold:0.0
 SpiderMode:ACR 199
@@ -273,18 +285,18 @@ RandomizeChestStealer:false
 SmartChestStealer:false
 DelayInvCleaner:98.0,118.0
 WaitDelayInvCleaner:50.0,108.0
-OpenInvCleaner:false
+InvCleanerInventoryMode:Open
 NoMoveInvCleaner:false
 NoSwingingInvCleaner:false
-keepBlocksInvCleaner:true
-keepRodsInvCleaner:false
-keepPotionsInvCleaner:true
-keepHoesInvCleaner:false
+KeepInvCleaner:Potions=true
+KeepInvCleaner:Blocks=true
+KeepInvCleaner:Hoes=false
+KeepInvCleaner:Rods=false
 RandomizeInvCleaner:false
 DelayAutoArmor:92.0,102.0
 WaitDelayAutoArmor:100.0,300.0
 WaitpastCleanAutoArmor:false
-OpenInvAutoArmor:false
+AutoArmorInventoryMode:Open
 NoMoveAutoArmor:false
 NoSwingingAutoArmor:false
 LongJumpMode:Negativity
@@ -296,11 +308,13 @@ BlinkMaxDistance:10.0
 WaterWalkMode:Solid
 VulcanWaterWalkMode:271
 NCPWaterWalkMode:Solid
+SpartanWaterWalkMode:P529
 DelayPingSpoof:0.0,800.0
 FakeRotateNoRotate:false
 FakeRotateDurationNoRotate:15.0
 SilentAutoTool:true
 SpoofSilentAutoTool:false
+ClientSideGuiWalk:false
 StopSprintGuiWalk:true
 FreeLookGuiWalk:false
 MotionInVwalk:true
@@ -360,6 +374,7 @@ BlockFuseTimeTNTBlock:80.0
 BlockDurationTimeTNTBlock:1.0
 AutoSwitchSwordTNTBlock:false
 SpoofTitleAntiExploit:false
+RessourcePackAntiExploit:false
 AntiFallMode:Motion
 MotionValueAntiFallMode:0.1
 PacketAntiFallMode:Position=true
@@ -377,6 +392,7 @@ ExcludeTargetStrafeMovementFix:false
 ModifyStrafeMovementFix:false
 FastBreakMode:Normal
 SpeedFastBreak:0.6
+PacketsFastBreak:1.0
 TicksFastConsume:13.0
 PotionsFastConsume:false
 FastConsumeMode:Packet
@@ -395,18 +411,32 @@ SlowMovementFastBow:false
 PacketAmountFastBow:30.0
 TimercustomFastBow:1.0
 TeleportMode:Vanilla
-Speed:false
+BlockBreakerModeBlock:Bed=true
+BlockBreakerModeBlock:Egg=false
+BlockBreakerModeBlock:Cake=false
+BlockBreakerMode:Basic
+BlockBreakerRange:4.0
+BlockBreakerDelay:0.0
+BedBreakBlockBreakerMode:Normal
+SurroundBreakBlockBreakerMode:Normal
+BlockBreakerSwing:false
+BlockBreakerSmoothRotation:false
+PitchSpeedRotationBlockBreaker:1.0,180.0
+YawSpeedRotationBlockBreaker:1.0,180.0
+BlockBreakerCorrectMovement:false
+NoWebMode:Cancel
 InvCleaner:true
 AutoArmor:true
 NoSlowdown:true
 Flight:false
 Velocity:true
-PacketSpoofer:false
-WaterWalk:true
 QuickStop:true
+WaterWalk:true
+PacketSpoofer:false
 KillAura:false
 TargetStrafe:true
 HotbarHelper:false
+BlockBreaker:false
 NoFall:false
 ChestStealer:false
 FastConsume:false
@@ -439,5 +469,8 @@ AntiBot:false
 Strafe:true
 Spider:false
 Sprint:true
+Speed:false
 Phase:false
+NoWeb:false
 Blink:false
+OCMessageforClient: MushMC Config based on NegativityV2 Config. Created on December 26th 2023 by Yeti
