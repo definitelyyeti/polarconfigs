@@ -30,7 +30,8 @@ PacketSpoofNoSlowDown:true
 PacketModeNoSlowDown:Matrix 731
 PacketOffsetNoSlowDown:Default
 ModifySprintSlowDown:true
-ModifySprintSlowDownMode:Force
+groundModifySprintSlowDownMode:Force
+airModifySprintSlowDownMode:Force
 VelocityMode:Matrix
 HorizontalPacketVelocity:0.0
 VerticalPacketVelocity:0.0
@@ -58,6 +59,8 @@ MotionCustomVelocityHurt:7=true
 MotionCustomVelocityHurt:8=true
 MotionCustomVelocityHurt:9=false
 MotionCustomVelocityGround:false
+MotionCustomVelocityJump:false
+MotionCustomVelocitySneak:false
 MotionCustomVelocityMotion:0.68
 ReduceJumpVelocity:false
 HorizontalJumpVelocity:0.0
@@ -208,6 +211,7 @@ TicksStrafe:0.0
 StrafeBoundPercentage:100.0
 NofallMode:Normal
 NormalNofallMode:Packet
+NofallNoGroundPacket:false
 AACNofallMode:442 Spoof
 VulcanNofallMode:272
 SpartanNofallMode:P501
@@ -246,7 +250,7 @@ RandomizeYawScaffold:false
 RandomYawAngleValueScaffold:3.0,4.0
 SmoothRandomYawAngleValueScaffold:3.0,11.0
 ChangeRateYawRandomAngleScaffold:26.0
-ScaffoldPitchRotationMode:Static
+ScaffoldPitchRotationMode:Fluent
 SensitivityScaffold:true
 AbstractMouseSensitivityFixScaffold:true
 DivergenceAbstractMouseSensitivityFixScaffold:false
@@ -254,7 +258,8 @@ EconomincalAngleScaffold:false
 ClosedEconomincalAngleScaffold:false
 EdgeRotateScaffold:false
 ScaffoldSprintMode:None
-SpoofSprintScaffold:false
+AirSpoofSprintScaffold:false
+GroundSpoofSprintScaffold:false
 CustomSpeedScaffold:true
 CustomAlwaysSpeedScaffold:true
 ScaffoldSpeedMode:Matrix 7732
@@ -280,6 +285,7 @@ SneakSpeedScaffold:0.55
 KeepEyeSightScaffoldSneak:false
 SameYScaffold:true
 SameYOnlyMoveScaffold:true
+SameYKeyTowerScaffold:true
 EdgePlaceScaffold:false
 EdgeDistanceScaffold:0.25
 EdgeDistanceJumpScaffold:0.25
@@ -317,6 +323,8 @@ ChestStealerAutoClose:true
 ChestStealerCloseDelay:119.0,137.0
 RandomizeChestStealer:true
 SmartChestStealer:true
+MisclickChestStealer:false
+MisclickrateChestStealer:1.0,50.0
 DelayInvCleaner:126.0,142.0
 WaitDelayInvCleaner:136.0,142.0
 InvCleanerInventoryMode:Closed
@@ -536,32 +544,34 @@ PitchSpeedRotationBowAimbot:16.0,36.0
 YawSpeedRotationBowAimbot:28.5,30.0
 CorrectMovementBowAimbot:true
 NoSlowdown:true
+Speed:false
+PacketSpoofer:false
 WaterWalk:true
 InvCleaner:true
 AutoArmor:true
-Speed:false
-IceSpeed:true
+NoWeb:false
 QuickStop:true
-PacketSpoofer:false
+IceSpeed:true
 KillAura:false
 ViaVersionFix:false
 Velocity:true
+NoJumpDelay:true
 TargetStrafe:false
 HotbarHelper:true
 BlockBreaker:false
-NoJumpDelay:true
 NoFall:false
 ChestStealer:false
 FastConsume:false
 MovementFix:false
+Flight:false
 BackRotate:true
 TestModule:false
+Step:false
 AntiCactus:true
 FastStairs:false
-TickBase:false
-Triggerbot:false
 AntiExploit:false
 FastBreak:false
+Triggerbot:false
 PingSpoof:false
 FastPlace:true
 LongJump:false
@@ -572,8 +582,9 @@ NoRotate:true
 TNTBlock:true
 SafeWalk:false
 AutoTool:true
-Scaffold:false
+TickBase:false
 FastBow:false
+Scaffold:false
 Teleport:false
 Criticals:false
 InvWalk:false
@@ -581,9 +592,6 @@ AntiFall:false
 Pattern:false
 AntiBot:false
 Strafe:false
-NoWeb:false
 Spider:false
 Phase:false
-Flight:false
-Step:false
 Blink:false
