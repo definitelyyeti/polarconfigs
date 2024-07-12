@@ -166,8 +166,8 @@ PreSwingKillAura:true
 UpdatedCombatKillAura:false
 AttackSlowDownKillaura:false
 MotionAttackSlowDownKillaura:1.0
-FakeAutoBlockKillaura:false
-AutoBlockFakeDistanceKillaura:1.0
+FakeAutoBlockKillaura:true
+AutoBlockFakeDistanceKillaura:3.9
 AutoBlockKillaura:true
 ClickAutoBlockKillaura:false
 AutoBlockDistanceKillaura:4.0
@@ -256,8 +256,8 @@ ScaffoldPitchRotationMode:Fluent
 SensitivityScaffold:false
 AbstractMouseSensitivityFixScaffold:false
 DivergenceAbstractMouseSensitivityFixScaffold:false
-EconomincalAngleScaffold:false
-ClosedEconomincalAngleScaffold:false
+EconomincalAngleScaffold:true
+ClosedEconomincalAngleScaffold:true
 EdgeRotateScaffold:false
 ScaffoldSprintMode:Always
 AirSpoofSprintScaffold:false
@@ -305,9 +305,9 @@ SwingScaffold:true
 ReduceDelayTowerScaffold:false
 TowerDelayScaffold:1.0,1.0
 TowerScaffold:true
-TowerScaffoldMode:NCP Lowhop
+TowerScaffoldMode:OldNCP
 InstantTeleportTowerScaffold:false
-ScaffoldTowerMove:No
+ScaffoldTowerMove:Always
 ScaffoldMode:Default
 BreezilyMovementDelayScaffold:0.0
 SpiderMode:ACR 199
@@ -564,6 +564,7 @@ NoJumpDelay:true
 TargetStrafe:true
 HotbarHelper:true
 BlockBreaker:false
+NoFall:false
 ChestStealer:false
 FastConsume:false
 MovementFix:false
@@ -593,7 +594,6 @@ InvWalk:true
 AntiFall:false
 Pattern:false
 AntiBot:false
-NoFall:false
 Strafe:true
 Spider:false
 Phase:false
