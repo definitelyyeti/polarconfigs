@@ -3,7 +3,7 @@ EagleSafeWalk:true
 EagleSneakModeSafeWalk:Safe
 AwaitDamageFlightMode:false
 ToggleDamageFlightMode:false
-FlightMode:Vanilla
+FlightMode:Collide
 SpartanFlightMode:P495
 VulcanFlightMode:271
 BoatFlightMode:Custom
