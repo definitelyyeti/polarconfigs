@@ -305,7 +305,7 @@ SwingScaffold:true
 ReduceDelayTowerScaffold:false
 TowerDelayScaffold:1.0,1.0
 TowerScaffold:true
-TowerScaffoldMode:OldNCP
+TowerScaffoldMode:Old NCP
 InstantTeleportTowerScaffold:false
 ScaffoldTowerMove:Always
 ScaffoldMode:Default
@@ -549,13 +549,11 @@ CorrectMovementBowAimbot:false
 InvCleaner:true
 NoSlowdown:true
 AutoArmor:true
-LongJump:false
 IceSpeed:true
 NoWeb:true
 QuickStop:true
 Speed:false
 PacketSpoofer:false
-Criticals:false
 Velocity:true
 KillAura:false
 ViaVersionFix:false
@@ -564,14 +562,12 @@ NoJumpDelay:true
 TargetStrafe:true
 HotbarHelper:true
 BlockBreaker:false
-NoFall:false
 ChestStealer:false
 FastConsume:false
 MovementFix:false
 Flight:false
 BackRotate:false
 TestModule:false
-TickBase:false
 AntiCactus:false
 FastStairs:false
 AntiExploit:false
@@ -579,6 +575,7 @@ FastBreak:false
 Triggerbot:false
 PingSpoof:false
 FastPlace:true
+LongJump:false
 BowAimbot:false
 FastClimb:false
 HighJump:false
@@ -586,15 +583,18 @@ NoRotate:true
 TNTBlock:false
 SafeWalk:false
 AutoTool:true
+TickBase:false
 FastBow:false
-Step:false
 Scaffold:false
 Teleport:false
+Criticals:false
 InvWalk:true
 AntiFall:false
 Pattern:false
 AntiBot:false
+NoFall:false
 Strafe:true
 Spider:false
 Phase:false
+Step:false
 Blink:false
