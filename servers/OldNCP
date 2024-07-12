@@ -559,7 +559,7 @@ FastConsume:false
 MovementFix:false
 HotbarHelper:false
 BlockBreaker:true
-ChestStealer:true
+ChestStealer:false
 TargetStrafe:true
 TestModule:false
 BackRotate:false
