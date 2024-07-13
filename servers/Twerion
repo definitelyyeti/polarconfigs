@@ -74,7 +74,7 @@ PushPlusPlusVelocity:false
 VoidCheckVelocity:true
 FireCheckVelocity:true
 PotionCheckVelocity:true
-AttackRangeKillaura:3.3
+AttackRangeKillaura:3.2
 AttackPreRangeKillaura:0.22
 AttackExtraRange:true
 MaxExtendRangeAttackRangeKillaura:0.5
