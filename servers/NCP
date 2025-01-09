@@ -775,7 +775,7 @@ Blink:false
 Strafe:true
 NoFall:false
 Phase:false
-OCNameClient:NCP
+OCVersionClient:3.16.1 b1152
 OCServer:test:eu.loyisa.cn
 OCOtherServer:
 
